@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms With Fizza</title>
+</head>
+<body>
+    <h1>HTML Forms Example</h1>
+    <form>
+    <div>
+        <label for="username">Enter your Username:</label>
+        <input type="text" id="username" name="name" placeholder="Enter your Username:" required autofocus pattern="[A-Za-z]"> 
+     </div>
+
+    <div>
+        <input type="radio" id="male" name="gender" value="Male" > 
+        <label for="Male">Male</label>
+    </div>
+
+    <div>
+        <input type="radio" id="Female" name="gender" value="Female" > 
+        <label for="Female">Female</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label>
+    </div>
+
+        <div>
+        <label for="review">Please Give Your Valuable Review:</label>
+        <br>
+        <textarea id="review" name="review" rows="4" cols="50"></textarea>
+    </div>
+
+     <div>
+        <select name="fruits">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="cherry">Cherry</option>
+        </select>
+    </div>
+
+    </form>
+</body>
+</html>
