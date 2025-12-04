@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors By Fizza</title>
+    <style>
+      /* CSS Selectors Demonstration */
+      /*Element Selector*/
+      h1 {
+        background-color: blue;
+      }
+      /*ID Selector*/
+      #paraID {
+        background-color: green;
+      }
+      /*Class Selector*/
+      .divClass {
+       color: rgb(255, 0, 157);
+      }
+      /*Child Selector*/
+      div > h2 {
+        background-color: yellow;
+      }
+      /*Descendant Selector*/
+      div p {
+        background-color: rgb(225, 209, 179)
+      }
+      /*Universal Selector*/
+      * {
+        padding: 20px;
+        margin: 0;
+      }
+      /*Pseudo Selectors*/
+      a:visited {
+        color: purple;
+      }
+
+      a:link {
+        color: pink;
+      }
+
+      a:hover {
+        background-color: brown;
+      }
+
+      a:active {
+        color: gray;
+      }
+
+      p:first-child {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to Selectors By Fizza</h1>
+
+    <p id="paraID">
+      This is a sample HTML file to demonstrate the structure of a basic
+      webpage.
+    </p>
+    <p >This is another paragraph.</p>
+
+    <div class="divClass">
+      <h2>This is a paragraph inside a div element.</h2>
+    </div>
+
+    <div class="divClass">
+      <span>
+        <p>This is another div with class.</p>    
+      </span>
+    </div>
+      <a href="https://www.google.com">Go To Google</a>
+  </body>
+</html>
