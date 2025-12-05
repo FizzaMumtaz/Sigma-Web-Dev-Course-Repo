@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        .box {
+            height: 100px;
+            box-sizing:border-box;
+            margin: 20px;
+            padding: 15px;
+            border: 5px solid black;
+        }
+        .box1 {
+            background-color: lightcoral;
+        }
+        .box2 {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Understanding the CSS Box Model</h1>
+    <div class="box , box1">I am a div</div>
+    <div class="box , box2">I am the second div</div>
+    <div id="box , box3">I am the third div</div>
+</body>
+</html>
