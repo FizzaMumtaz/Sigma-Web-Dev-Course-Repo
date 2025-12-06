@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity in CSS</title>
+    <style>
+        /* 1) Position and Order [if same selector aka same specificity] 
+        2) Specificity [Rule] if diff selectors 
+        3) Origin (From where it comes, Rare use)
+        4) Important KEYWORD*/
+
+        #id1{
+            color: orange; /* ID selector */
+        }
+        h1 {
+            color: blue; /* Type selector */
+        }
+        .c1{
+            color: green; /* Class selector */
+        }
+
+        .c2{
+            color: red; /* Class selector */
+        }
+
+        #id2{
+            color: purple /* ID selector */
+        }
+
+        .c3{
+            color: brown !important; /* Class selector with !important */
+        }
+
+        [data-x=a]{
+            color: rgb(48, 216, 82) !important; /* Attribute selector with !important */
+        }
+
+        </style>
+</head>
+<body>
+    <h1 class="c1 , c2" >This is a Heading</h1>
+    <h2  id ="id1" class="c1 , c2">This is a sub-heading</h2>
+    <h3 id ="id2" class="c1 , c2 , c3">This is a sub-sub-heading</h3>
+    <h4 data-x="a">This is a sub-sub-sub-heading</h4>
+</body>
+</html>
