@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        .box {
+            display: inline;
+            background-color: lightblue;
+        }   
+        .box2 {
+            display: block;
+            background-color: lightgreen;
+        }
+        .box3 {
+            background-color: lightcoral;
+            display: inline-block;
+            vertical-align: TOP;
+            /* width: 200px; */
+            height: 50px;    
+        }
+        .box4{
+            /* display: none; */
+            /* visibility: hidden; */
+            display : inline-block;
+            border: 2px solid rgb(32, 149, 155);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .box5{
+            display: inline-flex;
+            justify-content: center;
+            border: 2px solid rgb(155, 126, 32);
+            padding: 10px;
+            margin: 10px;
+        }
+        .box6{
+            display: Inline-grid;
+            justify-content: center;
+            border: 2px solid rgb(32, 90, 155);
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a div!
+    </div>
+    <div class="box2">
+        This is another div!
+    </div>
+    <div class="box3">
+        This is a third div without any special display property.   
+    </div>
+    <span>
+        This is a span element! 
+    </span>
+    <div>
+        This is a normal div!
+    </div>
+
+    <div class="box4">
+         Div A Hey! 
+    </div>
+
+    <div class="box4">
+         Div B Hey! 
+    </div>
+    <div>
+        This is a normal div!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit asperiores aperiam obcaecati eaque, minus ratione quia, quidem consectetur deserunt sequi corrupti, quod sunt doloribus facere qui! Est, provident? Qui delectus quasi voluptas libero.
+    </div>
+    <div class="box3 box5">
+        <div>Item 1--</div>
+        <div>--Item 2--</div>
+        <div>--Item 3</div>
+    </div>  
+    <div class="box3 box6">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>  
+</body>
+</html>
