@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        /* This way we use gbal variables */
+        :root{
+            --color: coral;
+            --bg-color: cadetblue;
+            --bg-color-2: lightgray;
+            --paddingVal: 10px 20px 15px 20px;
+        }
+        .box{
+            background-color: var(--bg-color);
+
+        }
+        .container{
+            /* Here I am overwriting the global variable, This becomes local variable! */
+            --color: darkblue;
+            background-color: var(--bg-color-2);
+            color: var(--color, yellow);
+        }
+        ul li:first-child{
+            padding : --var(--paddingVal);
+        }
+        ul li {
+            display: inline-flex;
+            padding: --var(--paddingVal);
+        }
+        </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Hello, World!</h1>
+        <p>This box uses CSS variables for styling.</p>
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>Profile</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2>Hey!</h2>
+        <p>This container also uses CSS variables for styling.</p>
+    </div>
+</body>
+</html>
