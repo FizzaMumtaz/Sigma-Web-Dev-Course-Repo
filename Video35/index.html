@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        .box:first-child {
+            background-color: lightblue;
+        }
+        .box:last-child {
+            background-color: lightgreen;
+        }
+       .box:nth-child(4)::first-line {
+            background-color: lightcoral;
+        }
+
+        .box::first-letter{
+            font-size: 200%;
+            color: purple;
+        }
+        .boxes *{
+            border: 2px solid black;
+        }
+
+        [data-color="highlight"] {
+            background-color: yellow;
+        }
+        
+        .box:nth-child(odd){
+            color: darkblue;
+        }
+        .box:nth-last-child(1){
+            color: rgb(192, 35, 155);
+        }
+        .boxes::before{
+            content: "Fizza ki bus nah hu jaye!!! ";
+            color: red;
+        }
+        .boxes::after{
+            content: " Bus kar yaar!!!";
+            color: red;
+        }
+        ::selection {
+            background: black;
+            color: aqua;
+        }
+         
+        input::placeholder {
+            color: rgb(125, 14, 210);
+            font-style: italic;
+        }
+        </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">I am a box</div>
+        <div class="box">I am a box</div>
+        <div data-color="highlight" class="box">I am a box</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis tenetur, aspernatur iste facilis et fugiat quae laudantium molestiae atque rem illo eius a cupiditate, asperiores repudiandae voluptate totam iure ad? Porro amet aliquid saepe, ad molestiae, nulla quia beatae facere odit voluptatibus quidem, vel eos voluptates natus consectetur hic. Eaque cupiditate vero expedita enim, voluptates nulla. Repellendus, similique dignissimos exercitationem officia dicta iste repudiandae tempora sed in veritatis molestiae harum quas sint soluta deleniti mollitia cupiditate dolor, error corporis laborum magnam, cumque est vero. Magni consequuntur natus porro architecto rem soluta modi laborum neque fuga quod. Pariatur, officiis quod, quam illum minus sunt dolor iste cupiditate dolores reiciendis perferendis distinctio provident eveniet saepe optio maiores qui iure harum architecto debitis voluptate ea, quibusdam libero? Quam rerum illo totam voluptates ducimus, facilis labore ab aperiam dolore dolor, molestiae quisquam magnam sequi inventore expedita cumque possimus, quidem laudantium sit doloribus nostrum unde nulla similique eaque. Deleniti eius qui repellendus minima eveniet laudantium et ducimus debitis sunt esse, accusamus quod labore atque consectetur quaerat. Odio minima sint modi repellendus. Aut nisi debitis doloremque qui at incidunt ipsam praesentium itaque sint totam quas aliquam, quod soluta quae assumenda tenetur a corrupti excepturi? Perspiciatis porro mollitia veniam delectus fugiat molestias ipsum minima neque, doloribus, optio cumque eligendi ullam deleniti, quod culpa laborum sit consequatur ducimus iste? Ex, rerum quae? Assumenda minus distinctio ipsa voluptatum corporis at accusantium facere. Ipsa modi impedit minima doloremque dolore nesciunt molestias, tenetur officiis natus omnis repellat, repellendus, et atque consequuntur perspiciatis fuga quibusdam. Cumque saepe velit nihil fuga asperiores vel esse placeat laboriosam mollitia facilis ducimus, laudantium accusamus eligendi repudiandae exercitationem magni eveniet. Accusamus numquam adipisci, placeat aspernatur repellat cumque provident eaque, expedita odio porro eius omnis consectetur nemo nesciunt magnam consequatur cupiditate, tempore deleniti similique quis vero aut? Illo nisi assumenda aperiam expedita nemo corrupti veritatis beatae, animi doloribus iste odit possimus dicta? Reiciendis quia ipsa, error aspernatur blanditiis incidunt hic, autem accusamus quod, obcaecati minus fugit consequuntur! Quas voluptatem aut nisi!</div>
+        <input type="text" placeholder ="Type here...">
+        <div class="box">I am a box</div>
+    </div>
+</body>
+</html>
