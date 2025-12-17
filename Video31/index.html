@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Media Queries</title>
+    <style>
+      body {
+        background-color: lightgray;
+      }
+
+       .box {
+        width: 344px;
+        height: 144px;
+        padding: 3px;
+        margin: 3px;
+        text-align: center;
+        background-color: white;
+        border: 2px solid black;
+        box-sizing: border-box;
+      }
+
+      .boxes{
+        display : flex;
+      }
+
+      @media only screen and (max-width: 600px) {
+        body {
+          background-color: lightblue;
+        }
+
+        .boxes{
+          flex-direction: column;
+          background-color: yellowgreen;
+
+      }
+    }
+     
+    @media only screen and (orientation: landscape) {
+        .boxes{
+          background-color: orange;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+<div class="box">Resize the browser window to see the effect!</div>
+    <div class="box">
+      When the width is 600px or less, the background color changes to light
+      blue.
+    </div>
+    <div class="box">Otherwise, it remains light gray.</div>
+    </div>
+    
+  </body>
+</html>
