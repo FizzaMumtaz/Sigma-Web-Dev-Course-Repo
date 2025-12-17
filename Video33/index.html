@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiColor NavBAR</title>
+    <style>
+        :root{
+            --main-color: rgb(234, 141, 108);
+            --secondary-color: rgb(161, 212, 230);
+            --temp-color: rgb(138, 237, 138);
+            --temp-color-2: rgb(227, 150, 162);
+            --padding: 30px 1000px ;
+            --margin: 5px;
+            --border-radius: 8px;
+        }
+        .box {
+            background-color: antiquewhite;
+        }
+        ul {
+            list-style-type: none;
+            margin: var(--margin);
+            padding: var(--padding);
+            display: flex;
+
+        }
+        ul li {
+            margin: 3px;
+            padding: 10px;
+            border-radius: var(--border-radius);
+            font-weight: bold;
+            cursor: pointer;
+        }
+        ul li:first-child {
+            background-color: var(--main-color);
+        }
+        ul li:nth-child(2) {
+            background-color: var(--secondary-color);
+        }
+        ul li:nth-child(3) {
+            background-color: var(--temp-color);
+        }
+        ul li:nth-child(4) {
+            background-color: var(--temp-color-2);
+        }
+        </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li> Home </li>
+            <li> About </li>
+            <li> Services </li>
+            <li> Contact </li>
+        </ul>
+    </div>
+</body>
+</html>
