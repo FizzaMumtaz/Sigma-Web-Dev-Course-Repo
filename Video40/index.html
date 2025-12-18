@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout Designing - From Draw.io to WebPage</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ul li {
+            list-style-type: none;
+            height: 5vh;
+            width: 100px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+        }
+        ul {
+            display: inline-flex;
+            flex-direction: row;
+            margin-left: 800px;
+
+        }
+        .box {
+            position: sticky;
+            top: 0;
+            width: 100vw;
+            background-color: rgb(240, 156, 54);
+        }
+         
+        .box2{
+            border : 2px solid black;
+            margin-top: 20px;
+            display: flex;
+            height: 50vh;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .box2a{
+            border : 2px solid rgb(18, 15, 114);
+            width: 50%;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: lightblue;
+
+        }
+        .box2b{
+            border : 2px solid rgb(3, 82, 42);
+            width: 50%;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: lightgreen;
+
+        }
+    
+        .box3{
+            font-family: 'Courier New', Courier, monospace;
+            height: 80vh;
+            width: 40vw;
+            padding-top :20px;
+            padding-left :20px;
+            padding-right :20px;
+            background-color: lightyellow;
+            margin-left: 10px;
+            margin-top: 30px;
+            border : 2px solid orange;
+            border-radius: 20px;
+            text-align: center;
+            margin-left: 500px;
+
+        }
+        .logo-image{
+            height: 120px;
+            width: 120px;
+            margin-left: 1300px;
+            margin-top: -130px;
+            border-radius: 50%;
+            border: 4px solid black;
+            position: fixed;
+            top: 700px;
+        }
+        .footer{
+            height: 10vh;
+            width: 100vw;
+            background-color: rgb(126, 91, 91);
+            margin-top: 30px;
+        }
+    
+        </style>
+</head>
+<body>
+    <div class="box">
+        <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    </div>
+
+    <div class="box2">
+        <div class="box2a"></div>
+        <div class="box2b"></div>
+    </div>
+    <div class="box3">
+        <h2>Welcome to CSS Layout Designing</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis animi eius nobis, temporibus magni consectetur? Repellat sunt non explicabo numquam ducimus impedit fuga vero voluptatibus, beatae, quis accusamus ut vitae id suscipit hic laudantium pariatur maxime dignissimos delectus. Animi aspernatur fuga quam aliquam vero repellendus sit suscipit? Tempore aliquam facere numquam doloremque repellat deserunt. Commodi mollitia voluptatum earum cum. Veritatis molestiae veniam odit, amet cupiditate facilis cumque possimus ullam laboriosam nostrum repudiandae vel ex quam ut earum inventore necessitatibus explicabo dolor architecto at illum odio aliquam velit rerum!   
+        </div>
+    <div class="logo">
+        <img class="logo-image" src="https://cdn.dribbble.com/userupload/24081806/file/original-ee15aa7735d4d28404258e6539d97feb.jpg?resize=1504x1128&vertical=center" alt="Logo" height="70" width="70">
+    </div>
+     <div class="footer"></div>
+</body>
+</html>
