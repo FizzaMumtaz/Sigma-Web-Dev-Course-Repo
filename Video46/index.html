@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        body{
+            background-color: rgb(2, 49, 34);
+        }
+        .box{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            justify-content: center;
+            margin: 30px;
+            padding: 40px;
+            padding-top: 20px;
+            width:10vw;
+            height: 10vh;
+            background-color:rgb(151, 232, 163);
+            text-decoration: underline;
+            animation-name: /*identifier, */animation2;
+            animation-timing-function:ease-in-out;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-direction:alternate-reverse;
+            animation-fill-mode: forwards;
+            /* animation-play-state: paused; */
+
+
+        }
+
+        /* @keyframes identifier {
+                from{
+                    transform: translateX(50vw) 
+                    translateY(20vw) ;
+
+                }
+                to{
+                    transform: translateX(10vw) 
+                    translateY(10vw) ;
+                }
+            } */
+
+            @keyframes animation2 {
+
+                
+             0%{
+                transform: rotate(45deg);
+
+             }
+             20%{
+                 transform: translateX(10vw) 
+                    translateY(10vw) ;
+             }
+             30%{
+                 transform: translateX(10vw) 
+                    translateY(10vw) ;
+             }
+             50%{
+                 transform: rotate(270deg);
+             }
+             90%{
+                 transform: rotate(360deg);
+             }
+             100%{
+                transform: translateX(40vw) 
+                    translateY(10vw) ;
+             }
+            }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            HAPPY NEW YEAR!  
+          
+        </div>
+    </div>
+</body>
+</html>
